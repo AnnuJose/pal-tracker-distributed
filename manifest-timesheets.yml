@@ -11,3 +11,11 @@ applications:
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  management:
+    endpoint:
+      health:
+        showDetails:always
+    endpoints:
+      web:
+        exposure:
+          include:*

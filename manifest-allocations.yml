@@ -11,3 +11,12 @@ applications:
   services:
   - tracker-allocations-database
   - tracker-service-registry
+  management:
+    endpoint:
+      health:
+        showDetails:always
+    endpoints:
+      web:
+        exposure:
+          include:*
+
